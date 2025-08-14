@@ -22,7 +22,7 @@
                   <i class="lni-map-marker"></i>
                   <div class="select">
                     <select name="state_name">
-                      <option selected="true" disabled="disabled">Select State</option>
+                      <option selected="true" disabled="disabled">Выберите город</option>
                       {% for state_name in state_search %}
                       <option value="{{ state_name }}">{{ state_name }}</option>
                       {% endfor %}
@@ -33,14 +33,14 @@
                   <i class="lni-menu"></i>
                   <div class="select">
                     <select name="category_name">
-                      <option selected="true" disabled="disabled">Select Category</option>
+                      <option selected="true" disabled="disabled">Выберите категорию</option>
                       {% for category_name in category_search %}
                       <option value="{{ category_name }}">{{ category_name }}</option>
                       {% endfor %}
                     </select>
                   </div>
                 </div>
-                <button class="btn btn-common" type="submit"><i class="lni-search"></i> Search Now</button>
+                <button class="btn btn-common" type="submit"><i class="lni-search"></i> Искать </button>
               </form>
             </div>
           </div>
@@ -113,7 +113,7 @@
                 <div class="listing-bottom">
                   <h3 class="price float-left">$ {{ featured_ad.price }}</h3>
                   <p href="#" class="btn-verified float-right"><i class="lni-check-box"></i>
-                    Verified Ad</p>
+                    Подтвержденное объявление</p>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                         class="lni-folder"></i>{{ recent_ad.category }}</a>
                   </div>
                   <h4><a href="{% url 'ads-detail' recent_ad.id %}">{{ recent_ad.title}}</a></h4>
-                  <span>Posted at: {{ recent_ad.date_created}}</span>
+                  <span>Размещено по адресу: {{ recent_ad.date_created}}</span>
                   <ul class="address">
                     <li>
                       <i class="lni-map-marker"></i>{{ recent_ad.city}}, {{ recent_ad.state}}
@@ -202,8 +202,7 @@
                   </ul>
                   <div class="listing-bottom">
                     <h3 class="price float-left">$ {{ recent_ad.price }}</h3>
-                    <p class="btn-verified float-right"><i class="lni-check-box"></i> Verified
-                      Ad</p>
+                    <p class="btn-verified float-right"><i class="lni-check-box"></i> Подтвержденное объявление</p>
                   </div>
                 </div>
               </div>

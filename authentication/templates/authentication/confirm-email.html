@@ -1,7 +1,7 @@
 {% autoescape off %}
-Hi {{ user.username }},
-Thanks for your registration with HuntingAds.
-Please click on the link below to confirm your registration.
+Привет {{ user.username }},
+Благодарим вас за регистрацию в Сервисе.
+Пожалуйста, перейдите по ссылке ниже, чтобы подтвердить свою регистрацию.
 http://{{ domain }}{% url 'activate' uid=uid token=token %}
-If you think, it's not you, then just ignore this email.
+Если вы не отправляли запрос на регистрацию, просто проигнорируйте это письмо.
 {% endautoescape %}

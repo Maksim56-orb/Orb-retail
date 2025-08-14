@@ -91,7 +91,7 @@
                 {% video ads_detail.video 'small' %}
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
 
               </div>
             </div>
@@ -116,36 +116,33 @@
             <li>
               <p>
                 <strong><i class="lni-user"></i> Seller:</strong> {{ ads_detail.author }}
-                <a class="link-small" href="{% url 'author-archive' ads_detail.author.pk %}">(See other ads by this
-                  seller)</a>
+                <a class="link-small" href="{% url 'author-archive' ads_detail.author.pk %}">(Смотрите другие объявления этого продавца)</a>
               </p>
             </li>
             <li>
               <p>
                 <strong><i class="lni-map-marker"></i> State:</strong> {{ ads_detail.state }}
-                <a class="link-small" href="{% url 'state-archive' ads_detail.state.slug %}">(See other ads in this
-                  state)</a>
+                <a class="link-small" href="{% url 'state-archive' ads_detail.state.slug %}">(Смотрите другие объявления в этом городе) </a>
               </p>
             </li>
             <li>
               <p>
-                <strong><i class="lni-map"></i> City:</strong> {{ ads_detail.city }}
-                <a class="link-small" href="{% url 'city-archive' ads_detail.city.slug %}">(See other ads in this
-                  city)</a>
+                <strong><i class="lni-map"></i> Город:</strong> {{ ads_detail.city }}
+                <a class="link-small" href="{% url 'city-archive' ads_detail.city.slug %}">(Смотрите другие объявления в этом городе) </a>
               </p>
             </li>
             <li>
               <p>
-                <strong><i class="lni-folder"></i> Category:</strong> {{ ads_detail.category }}
+                <strong><i class="lni-folder"></i> Категории:</strong> {{ ads_detail.category }}
                 <a class="link-small" href="{% url 'category-archive' ads_detail.category.slug %}">(See other ads in
                   this category)</a>
               </p>
             </li>
             <li>
-              <p><strong><i class="lni-archive"></i> Condition:</strong> {{ ads_detail.condition }}</p>
+              <p><strong><i class="lni-archive"></i> Состояние:</strong> {{ ads_detail.condition }}</p>
             </li>
             <li>
-              <p><strong><i class="lni-package"></i> Brand:</strong> <a href="#">{{ ads_detail.brand }}</a></p>
+              <p><strong><i class="lni-package"></i> Бренд:</strong> <a href="#">{{ ads_detail.brand }}</a></p>
             </li>
           </ul>
           <div class="ads-btn mb-4">

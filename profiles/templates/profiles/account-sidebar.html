@@ -12,7 +12,7 @@
         </div>
         <div class="user-info">
           <p><i class="lni-envelope"></i> Email @ {{ user.email }}</p>
-          <p><i class="lni-calendar"></i> Joined @ {{ user.date_joined|date }}</p>
+          <p><i class="lni-calendar"></i> Присоединился @ {{ user.date_joined|date }}</p>
         </div>
         
 
@@ -22,7 +22,7 @@
           <li>
             <a class="active" href="{% url 'dashboard' %}">
               <i class="lni-dashboard"></i>
-              <span>Dashboard</span>
+              <span>Панель управления</span>
             </a>
           </li>
           <li>
@@ -48,7 +48,7 @@
           <li>
             <a href="{% url 'logout' %}">
               <i class="lni-enter"></i>
-              <span>Logout</span>
+              <span>Выход из системы</span>
             </a>
           </li>
           <!-- <li>

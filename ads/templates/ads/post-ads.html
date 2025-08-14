@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="breadcrumb-wrapper">
-          <h2 class="product-title">Post your Ads</h2>
+          <h2 class="product-title"> Размещайте свои объявления </h2>
           <!-- <ol class="breadcrumb">
             <li><a href="#">Home /</a></li>
             <li class="current">Post your Ads</li>
@@ -32,84 +32,83 @@
         <div class="row page-content">
           <form action="" class="ads-form" id="ad-post-form">
 
-            <label>Product Title <span class="req-aseteric">*</span></label>
+            <label> Название продукта <span class="req-aseteric">*</span></label>
             <input type="text" id="title" class="form-control ad-post-form"
               placeholder="e.g. Hunting Binoculars for Sale">
             <div class="error-msg">
               <div id="titlemsg"></div>
             </div>
 
-            <label>Product Description <span class="req-aseteric">*</span></label>
+            <label> Описание товара <span class="req-aseteric">*</span></label>
             <textarea rows="6" id="description" class="form-control ad-post-form"
               placeholder="Provide as much detail as possible"></textarea>
             <div class="error-msg">
               <div id="descriptionmsg"></div>
             </div>
 
-            <label>Select Ads Category <span class="req-aseteric">*</span></label>
+            <label> Выберите категорию объявлений <span class="req-aseteric">*</span></label>
             <div class="select ad-post-form">
               <select id="category" name="category" class="form-control">
-                <option value="Archery">Archery</option>
-                <option value="Aviation services">Aviation services</option>
-                <option value="Blinds & Stands">Blinds & Stands</option>
-                <option value="Breeder bucks & Breeding services">Breeder bucks & Breeding services</option>
-                <option value="Business for sale">Business for sale</option>
-                <option value="Camouflage & Outerwear">Camouflage & Outerwear</option>
-                <option value="Exotics for sale & Exotics wanted">Exotics for sale & Exotics wanted</option>
-                <option value="Feeders">Feeders</option>
-                <option value="Fire arm accessories">Fire arm accessories</option>
-                <option value="Footwear">Footwear</option>
-                <option value="Game calls">Game calls</option>
-                <option value="Guide jobs, Ranch manager jobs & camp staff">Guide jobs, Ranch manager jobs & camp staff
+                <option value="Archery"> Стрельба из лука </option>
+                <option value="Aviation services">Авиационные услуги</option>
+                <option value="Blinds & Stands">Жалюзи и подставки</option>
+                <option value="Breeder bucks & Breeding services"> Самцы-заводчики и услуги по разведению </option>
+                <option value="Business for sale"> Бизнес на продажу </option>
+                <option value="Camouflage & Outerwear"> Камуфляж и верхняя одежда </option>
+                <option value="Exotics for sale & Exotics wanted"> Экзотика на продажу и экзотика в розыске </option>
+                <option value="Feeders"> Кормушки </option>
+                <option value="Fire arm accessories"> Принадлежности для огнестрельного оружия </option>
+                <option value="Footwear">Обувь</option>
+                <option value="Game calls">Игровые вызовы</option>
+                <option value="Guide jobs, Ranch manager jobs & camp staff">Работа гидом, управляющим ранчо и персоналом лагеря
                 </option>
-                <option value="Gun safes">Gun safes</option>
-                <option value="Hunting dogs for sale & training">Hunting dogs for sale & training</option>
-                <option value="Hunting land for lease & leases wanted">Hunting land for lease & leases wanted</option>
-                <option value="Hunting property for sale">Hunting property for sale</option>
-                <option value="Hunting vehicles & ATVs for sale">Hunting vehicles & ATVs for sale</option>
-                <option value="Merchandise">Merchandise</option>
-                <option value="Outfitter Operations (Find a hunt)">Outfitter Operations (Find a hunt)</option>
-                <option value="Property improvements & services">Property improvements & services</option>
-                <option value="Traps and Trapping services">Traps and Trapping services</option>
-                <option value="Waterfowl">Waterfowl</option>
-                <option value="Wildlife Biology and Surveying">Wildlife Biology and Surveying</option>
-                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Gun safes">Оружейные сейфы</option>
+                <option value="Hunting dogs for sale & training">Охотничьи собаки для продажи и дрессировки</option>
+                <option value="Hunting land for lease & leases wanted">Охотничьи угодья сдаются в аренду и требуются арендаторы</option>
+                <option value="Hunting property for sale">Охотничье имущество на продажу</option>
+                <option value="Hunting vehicles & ATVs for sale">Продажа охотничьих автомобилей и квадроциклов</option>
+                <option value="Merchandise">Товар</option>
+                <option value="Outfitter Operations (Find a hunt)">Операции с экипировкой (поиск объекта охоты)</option>
+                <option value="Property improvements & services">Благоустройство недвижимости и услуги</option>
+                <option value="Traps and Trapping services">Ловушки и услуги по отлову</option>
+                <option value="Waterfowl">Водоплавающие птицы</option>
+                <option value="Wildlife Biology and Surveying">Биология дикой природы и геодезия</option>
+                <option value="Miscellaneous">Разнообразный</option>
               </select>
             </div>
             <div class="error-msg">
               <div id="categorymsg"></div>
             </div>
 
-            <label>Product Price <span class="req-aseteric">*</span> <span class="h-text"> (Value should be numeric.
-                Don't put $ sign.)</span></label>
+            <label>Цена товара <span class="req-aseteric">*</span> <span class="h-text"> (Значение должно быть числовым. Не ставьте другие знаки.)</span></label>
             <input type="number" id="price" class="form-control ad-post-form" placeholder="e.g. 2500">
             <div class="error-msg">
               <div id="pricemsg"></div>
             </div>
 
-            <label>Select Product Condition <span class="req-aseteric">*</span></label>
+            <label>Выберите состояние продукта <span class="req-aseteric">*</span></label>
             <div class="select ad-post-form">
               <select id="condition" name="condition" class="form-control">
-                <option value="Excellent">Excellent</option>
-                <option value="Good">Good</option>
-                <option value="Fair">Fair</option>
+                <option value="Отлично">Excellent</option>
+                <option value="Хорошо">Good</option>
+                <option value="Изношено">Fair</option>
               </select>
             </div>
             <div class="error-msg">
               <div id="conditionmsg"></div>
             </div>
 
-            <label>Select Your State <span class="req-aseteric">*</span></label>
+            <label>Выберите свой город <span class="req-aseteric">*</span></label>
             <div class="select ad-post-form">
               <select id="state" name="state" class="form-control">
 
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <option value="Arizona">Arizona</option>
-                <option value="Arkansas">Arkansas</option>
-                <option value="California">California</option>
-                <option value="Colorado">Colorado</option>
-                <option value="Connecticut">Connecticut</option>
+                <option value="Москва">Alabama</option>
+                <option value="Санкт-Петербург">Alaska</option>
+                <option value="Самара">Arizona</option>
+                <option value="Уфа">Arkansas</option>
+                <option value="Казань">California</option>
+                <option value="Оренбург">Colorado</option>
+                <!--<option value="Connecticut">Connecticut</option>
                 <option value="Delaware">Delaware</option>
                 <option value="District Of Columbia">District Of Columbia</option>
                 <option value="Florida">Florida</option>
@@ -153,20 +152,20 @@
                 <option value="Washington">Washington</option>
                 <option value="West Virginia">West Virginia</option>
                 <option value="Wisconsin">Wisconsin</option>
-                <option value="Wyoming">Wyoming</option>
+                <option value="Wyoming">Wyoming</option>-->
               </select>
             </div>
             <div class="error-msg">
               <div id="statemsg"></div>
             </div>
 
-            <label>Your City <span class="req-aseteric">*</span></label>
-            <input type="text" id="city" class="form-control ad-post-form" placeholder="e.g. Houston">
+            <label>Ваш город <span class="req-aseteric">*</span></label>
+            <input type="text" id="city" class="form-control ad-post-form" placeholder="например, Самара">
             <div class="error-msg">
               <div id="citymsg"></div>
             </div>
 
-            <label>Product Brand <span class="h-text">(Leave empty if not applicable)</span></label>
+            <label> Производитель <span class="h-text">(Оставьте пустым, если это не важно)</span></label>
             <input type="text" id="brand" class="form-control ad-post-form" placeholder="e.g. Bushnell">
             <div class="error-msg">
               <div id="brandmsg"></div>
@@ -174,22 +173,21 @@
 
             
 
-            <label>Your Phone no. <span class="req-aseteric">*</span></label>
-            <input type="text" id="phone" class="form-control ad-post-form" placeholder="Provide your best contact no.">
+            <label> Вашего телефона нет. <span class="req-aseteric">*</span></label>
+            <input type="text" id="phone" class="form-control ad-post-form" placeholder="Укажите свой контактный номер.">
             <div class="error-msg">
               <div id="phonemsg"></div>
             </div>
 
-            <label>Post Video Url <span class="h-text"> (Don't post embed link. Leave empty if not
-                applicable)</span></label>
+            <label>Опубликовать URL-адрес видео<span class="h-text"> (Не размещайте ссылку для видео, если его нет. Оставьте поле пустым)</span></label>
             <input type="url" id="video" class="form-control ad-post-form"
               placeholder="e.g. https://www.youtube.com/watch?v=ooHvPr4Bk4I">
-            <label>Post Product Picture <span class="h-text"> (Max. 5 pictures. File size should be less than 3MB.
-                Allowed file type jpeg, jpg & png.) </span></label>
+            <label>Опубликовать изображение продукта <span class="h-text"> (Не более 5 изображений. Размер файла должен быть не более 3 МБ.
+                Разрешенный тип файла - jpeg, jpg и png.) </span></label>
 
             <input type="file" multiple>
 
-            <button type="button" id="saveBtn" class="btn btn-common log-btn">Post Ad</button>
+            <button type="button" id="saveBtn" class="btn btn-common log-btn">Разместить объявление</button>
           </form>
         </div>
 
@@ -239,35 +237,35 @@
     $(document).on('click', '#saveBtn', function (e) {
 
       if ($('#title').val() === "") {
-        $("#titlemsg").html("<div class='alert alert-danger'>Title can not be empty</div>");
+        $("#titlemsg").html("<div class='alert alert-danger'>Заголовок не может быть пустым</div>");
       }
 
       if ($('#description').val() === "") {
-        $("#descriptionmsg").html("<div class='alert alert-danger'>Description can not be empty</div>");
+        $("#descriptionmsg").html("<div class='alert alert-danger'>Описание не может быть пустым</div>");
       }
 
       if ($('#category').val() === "") {
-        $("#categorymsg").html("<div class='alert alert-danger'>Category can not be empty</div>");
+        $("#categorymsg").html("<div class='alert alert-danger'>Категория не может быть пустой</div>");
       }
 
       if ($('#price').val() === "") {
-        $("#pricemsg").html("<div class='alert alert-danger'>Price can not be empty & must be numeric</div>");
+        $("#pricemsg").html("<div class='alert alert-danger'>Цена не может быть пустой и должна быть числовой</div>");
       }
 
       if ($('#condition').val() === "") {
-        $("#conditionmsg").html("<div class='alert alert-danger'>Condition can not be empty</div>");
+        $("#conditionmsg").html("<div class='alert alert-danger'>Условие не может быть пустым</div>");
       }
 
       if ($('#state').val() === "") {
-        $("#statemsg").html("<div class='alert alert-danger'>State can not be empty</div>");
+        $("#statemsg").html("<div class='alert alert-danger'>Состояние не может быть пустым</div>");
       }
 
       if ($('#city').val() === "") {
-        $("#citymsg").html("<div class='alert alert-danger'>City can not be empty</div>");
+        $("#citymsg").html("<div class='alert alert-danger'>Город не может быть пустым</div>");
       }
 
       if ($('#phone').val() === "") {
-        $("#phonemsg").html("<div class='alert alert-danger'>You must provide a phone no.</div>");
+        $("#phonemsg").html("<div class='alert alert-danger'>Вы должны указать номер телефона.</div>");
       }
 
 
@@ -299,7 +297,7 @@
         enctype: 'multipart/form-data',
         success: function () {
           $("#formsuccessmsg").html(
-            "<div class='alert alert-success'>The Ad has been posted successfully and   waiting for approval by Admin.</div>"
+            "<div class='alert alert-success'>Объявление успешно размещено и ожидает одобрения администратора.</div>"
           );
           // alert('The Ads has been posted successfully!')
           $('#ad-post-form').each(function () {
@@ -309,7 +307,7 @@
         },
         error: function (xhr, errmsg, err) {
           $("#formerrmsg").html(
-            "<div class='alert alert-danger'>You have one or more error. Please provide all required fields to post ad.</div>"
+            "<div class='alert alert-danger'>У вас одна или несколько ошибок. Пожалуйста, заполните все поля, необходимые для размещения объявления.</div>"
           );
           // console.log(xhr.status + ":" + xhr.responseText)
           // alert('Failed to post. Make sure you fill all the fields')

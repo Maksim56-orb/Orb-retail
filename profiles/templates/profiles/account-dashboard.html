@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="breadcrumb-wrapper">
-          <h2 class="product-title">Dashboard</h2>
+          <h2 class="product-title">Панель управления</h2>
           <!-- <ol class="breadcrumb">
             <li><a href="#">Home /</a></li>
             <li class="current">Dashboard</li>
@@ -30,7 +30,7 @@
         <div class="page-content">
           <div class="inner-box">
             <div class="dashboard-box">
-              <h2 class="dashbord-title">Dashboard</h2>
+              <h2 class="dashbord-title">Панель управления</h2>
             </div>
             <div class="dashboard-wrapper">
               <div class="dashboard-sections">
@@ -39,8 +39,8 @@
                     <div class="dashboardbox">
                       <div class="icon"><i class="lni-write"></i></div>
                       <div class="contentbox">
-                        <h2>Total Ads</h2>
-                        <h3>{{ total_ads }} Ads</h3>
+                        <h2>Все объявления</h2>
+                        <h3>{{ total_ads }} Объявления</h3>
                       </div>
                     </div>
                   </div>
@@ -48,8 +48,8 @@
                     <div class="dashboardbox">
                       <div class="icon"><i class="lni-add-files"></i></div>
                       <div class="contentbox">
-                        <h2>Featured Ads</h2>
-                        <h3>{{ featured_ads }} Ads</h3>
+                        <h2>Рекомендуемые объявления</h2>
+                        <h3>{{ featured_ads }} Объявления</h3>
                       </div>
                     </div>
                   </div>
@@ -69,12 +69,12 @@
                 <thead>
                   <tr>
                     <!-- <th>Photo</th> -->
-                    <th>Title</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Date Posted</th>
-                    <th>Status</th>
-                    <th>Action</th>
+                    <th>Заглавие</th>
+                    <th>Категория</th>
+                    <th>Ценя</th>
+                    <th>Дата размещения</th>
+                    <th>Статус</th>
+                    <th>Действие</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -99,9 +99,9 @@
                     </td>
                     <td data-title="Ad Status">
                       {% if ad.is_active %}
-                      <span class="adstatus adstatusactive">Active</span>
+                      <span class="adstatus adstatusactive">Активное</span>
                       {% else %}
-                      <span class="adstatus adstatusinactive">Inactive</span>
+                      <span class="adstatus adstatusinactive">Не активное</span>
                       {% endif %}
                     </td>
                     <td data-title="Action">
