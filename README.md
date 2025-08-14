@@ -1,151 +1,148 @@
-<h1 align="center"> Classified Ads </h1> <br>
+<h1 align="center"> Доска объявлений </h1> <br>
 
 <h3 align="center">
-  A Buy/Sell Marketplace where Seller can post their product's ad and Buyer can purchase the product. Built with Python/Django.
-</h3>
+Торговая площадка для покупки/продажи, где продавец может разместить объявление о своем товаре, а покупатель - приобрести его. Создана на Python/Django.</h3>
 
-## Table of Contents
+## Оглавление
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation Process](#installation-process)
-- [Project Demo](#project-demo)
-- [Feedback](#feedback)
+- [Введение](#introduction)
+- [Особенности](#features)
+- [Процесс установки](#installation-process)
+- [Демонстрация проекта](#project-demo)
+- [Обратная связь](#feedback)
 
-## Introduction
+## Вступление
 
-Django Classified Ads is a Buy/Sell Marketplace where Seller can post their product advertisement and Buyer can directly contact them to purchase the product. Post an advertisement. Filter advertisement by Category and State. See all advertisements for a particular User, State, City and Category. Email/Phone the Buyer to purchase an advertised product. Built with Python/Django and 100% free to use.
+Django Classified Ads - это торговая площадка для покупки /продажи, где продавец может разместить объявление о своем товаре, а покупатель может напрямую связаться с ним, чтобы приобрести товар. Разместите объявление. Отфильтруйте рекламу по категориям и штатам. Просмотрите все объявления для конкретного пользователя, штата, города и категории. Отправьте электронное письмо / позвоните покупателю, чтобы приобрести рекламируемый продукт. Создан на Python / Django и на 100% бесплатен для использования.
 
-## Features
+## Особенности
 
-A few of the things you can do with Classified Ads:
+Вот несколько советов, которые вы можете сделать с помощью объявлений на сайте <url>:
 
-* Signup and confirm your email account to be able to logged in
-* Post an advertisement with a user friendly file upload system
-* Admin must approve the ad in order for it to appear in the website 
-* Browse all advertisements listing
-* Browse Featured advertisements
-* Browse Most Recent advertisements 
-* Browse advertisements by a particular User
-* Browse advertisements by a particular State
-* Browse advertisements by a particular City
-* Browse advertisements by a particular Category
-* Filter advertisement by Category and/or State
-* Email/Phone the Buyer to purchase an advertised product
+* Зарегистрируйтесь и подтвердите свою учетную запись электронной почты, чтобы иметь возможность войти в систему
+* Разместите объявление с помощью удобной системы загрузки файлов
+* Администратор должен одобрить объявление, чтобы оно появилось на веб-сайте 
+* Просмотреть список всех рекламных объявлений
+* Просмотреть избранные рекламные объявления
+* Просмотреть последние рекламные объявления 
+* Просмотреть рекламные объявления определенного пользователя
+* Просмотреть рекламные объявления определенного штата
+* Просмотреть рекламные объявления определенного города
+* Просмотреть рекламные объявления определенной категории
+* Отфильтровать рекламу по категориям и/или состоянию
+* Отправить электронное письмо/позвонить покупателю, чтобы он приобрел рекламируемый товар
 
+## Процесс установки
 
-## Installation Process
+**Процесс установки (Windows)**
 
-**Installation Process (Windows)**
+1. Создайте Виртуальную Среду "virtualenv projectenv"
+2. Перейдите в Каталог среды `cd projectenv/scripts`
+3. Активируйте Виртуальную Среду `активировать`
+4. Клонируем Этот Проект `git clone https://github.com/mahmud-sajib/Django-Classified-Ads.git`
+5. Переходим В Каталог Проекта `cd Django-Classified-Ads`
+6. Устанавливаем Необходимый Пакет `pip install -r requirements.txt`
+7. Переносим Базу Данных `python manage.py migrate`
+8. Наконец, Запустите Проект "python manage.py runserver`
 
-1. Create a Virtual Environment `virtualenv projectenv`
-2. Go To environment Directory `cd projectenv/scripts`
-3. Activate Virtual Environment `activate`
-4. Clone This Project `git clone https://github.com/mahmud-sajib/Django-Classified-Ads.git`
-5. Go To Project Directory `cd Django-Classified-Ads`
-6. Install Required Package `pip install -r requirements.txt`
-7. Migrate Database `python manage.py migrate`
-8. Finally Run The Project `python manage.py runserver`
+## Демонстрация проекта
 
-## Project Demo
-
-### Home Page
+### Домашняя страница
 
 <p>
   <img src = "https://i.imgur.com/XHHXaEL.png" width=700>
 </p>
 
-### Post Ad Page
+### Разместить рекламную страницу
 
 <p>
   <img src = "https://i.imgur.com/tuyZyXe.png" width=700>
 </p>
 
-### Ad Listing Page
+### Страница со списком объявлений
 
 <p>
   <img src = "https://i.imgur.com/WCO3xXq.png" width=700>
 </p>
 
-### Ad Detail Page
+### Страница с подробной информацией об объявлении
 
 <p>
   <img src = "https://i.imgur.com/CgvT69Y.png" width=700>
 </p>
 
-### Ad by Author Page
-
+### Страница с объявлением автора
 <p>
   <img src = "https://i.imgur.com/jMJHa9K.png" width=700>
 </p>
 
-### Ad by State Page
+### Страница объявлений по штатам
 
 <p>
   <img src = "https://i.imgur.com/1qOgfQB.png" width=700>
 </p>
 
-### Ad by Category Page
+### Страница с объявлениями по категориям
 
 <p>
   <img src = "https://i.imgur.com/0NLW1J3.png" width=700>
 </p>
 
-### Ad by City Page
+###Страница с объявлениями по городам
 
 <p>
   <img src = "https://i.imgur.com/Ck1JFpY.png" width=700>
 </p>
 
-### Signup Page
+### Страница регистрации
 
 <p>
   <img src = "https://i.imgur.com/gaHoaQr.png" width=700>
 </p>
 
-### Login Page
+### Страница входа в систему
 
 <p>
   <img src = "https://i.imgur.com/YpKYmEP.png" width=700>
 </p>
 
-### Registration Confirmation Email Notification
+### Уведомление о подтверждении регистрации по электронной почте
 
 <p>
   <img src = "https://i.imgur.com/uiBiHnn.png" width=700>
 </p>
 
-### Ad Submission Admin Email Notification
+### Уведомление администратора о подаче объявления по электронной почте
 
 <p>
   <img src = "https://i.imgur.com/0572MVx.png" width=700>
 </p>
 
-### User Dashboard Page
+### Страница панели мониторинга пользователя
 
 <p>
   <img src = "https://i.imgur.com/wWRPppX.png" width=700>
 </p>
 
-### Profile Settings Page
+### Страница настроек профиля
 
 <p>
   <img src = "https://i.imgur.com/wWzKwTK.png" width=700>
 </p>
 
-### Faq Page
+###Страница часто задаваемых вопросов
 
 <p>
   <img src = "https://i.imgur.com/HROe3bR.png" width=700>
 </p>
 
-### Contact Page
+### Страница контактов
 
 <p>
   <img src = "https://i.imgur.com/3VYXVbu.png" width=700>
 </p>
 
-## Feedback
+## Обратная связь
 
 Feel free to [file an issue](https://github.com/mahmud-sajib/Django-Classified-Ads/issues/new). If you wish to contribute, please feel free to do so!
 

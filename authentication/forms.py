@@ -14,7 +14,7 @@ class UserRegistrationForm(UserCreationForm):
         'type': 'text',
         'class': 'form-control',  
         'name': 'username', 
-        'placeholder': 'Username'
+        'placeholder': 'Логин'
     }))
 
     # Styling the password1 form fields
@@ -22,7 +22,7 @@ class UserRegistrationForm(UserCreationForm):
         'type': 'password',
         'class': 'form-control',  
         'name': 'password1', 
-        'placeholder': 'Password'
+        'placeholder': 'Пароль'
     }))
 
     # Styling the password2 form fields
@@ -30,7 +30,7 @@ class UserRegistrationForm(UserCreationForm):
         'type': 'password',
         'class': 'form-control',  
         'name': 'password2', 
-        'placeholder': 'Retype Password'
+        'placeholder': 'Повторите пароль'
     }))
     
     # Making the email field required 
@@ -40,7 +40,7 @@ class UserRegistrationForm(UserCreationForm):
     email = forms.EmailField(widget=forms.TextInput(attrs={
         'type': 'email',
         'class': 'form-control',  
-        'placeholder': 'Email Address'
+        'placeholder': 'Email'
     }))
 
     
@@ -55,7 +55,7 @@ class UserRegistrationForm(UserCreationForm):
         duplicate_email = User.objects.filter(email=email).exists()
         print("Email Taken")
         if duplicate_email:
-            raise forms.ValidationError("This Email address is already in use.")
+            raise forms.ValidationError("Этот адрес электронной почты уже используется.")
         return email
 
 
@@ -63,13 +63,13 @@ class EmailValidationOnForgotPassword(PasswordResetForm):
     email = forms.EmailField(label="", widget=forms.TextInput(attrs={
         'type': 'email',
         'class': 'form-control',  
-        'placeholder': 'Email Address'
+        'placeholder': 'Введите Email'
     }))
 
     def clean_email(self):
         email = self.cleaned_data['email']
         if not User.objects.filter(email__iexact=email, is_active=True).exists():
-            raise forms.ValidationError("There is no user registered with the specified email address!")
+            raise forms.ValidationError("На указанный адрес электронной почты не зарегистрирован ни один пользователь!")
 
         return email
 
@@ -79,7 +79,7 @@ class EmailSetPassword(SetPasswordForm):
         'type': 'password',
         'class': 'form-control',  
         'name': 'new_password1', 
-        'placeholder': 'Password'
+        'placeholder': 'Пароль'
     }))
 
     # Styling the password2 form fields
@@ -87,19 +87,19 @@ class EmailSetPassword(SetPasswordForm):
         'type': 'password',
         'class': 'form-control',  
         'name': 'new_password2', 
-        'placeholder': 'Retype Password'
+        'placeholder': 'Повторите пароль'
     }))
 
 # Updating the User registration form
 class UserUpdateForm(ModelForm):
-    first_name = forms.CharField(label="First Name", widget=forms.TextInput(attrs={
+    first_name = forms.CharField(label="Имя", widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',  
         'name': 'first_name', 
         'placeholder': 'First Name'
     }))
 
-    last_name = forms.CharField(label="Last Name", widget=forms.TextInput(attrs={
+    last_name = forms.CharField(label="Фамилия", widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',  
         'name': 'last_name', 
