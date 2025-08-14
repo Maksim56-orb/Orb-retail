@@ -45,6 +45,7 @@ Django Classified Ads - это торговая площадка для поку
 7. Переносим Базу Данных `python manage.py migrate`
 8. Наконец, Запустите Проект "python manage.py runserver`
 
+<!--
 ## Демонстрация проекта
 
 ### Домашняя страница
@@ -145,4 +146,4 @@ Django Classified Ads - это торговая площадка для поку
 ## Обратная связь
 
 Feel free to [file an issue](https://github.com/mahmud-sajib/Django-Classified-Ads/issues/new). If you wish to contribute, please feel free to do so!
-
+-->
